@@ -3,46 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-        main {
-            padding: 20px;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .box {
-            flex: 1 1 50%;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        @media (max-width: 768px) {
-            .box {
-                flex: 1 1 100%;
-            }
-        }
-    </style>
+    <title>富國島之旅</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>Header</header>
-    <main>
-        <div class="container">
-            <div class="box" style="background-color: lightblue;">Box 1</div>
-            <div class="box" style="background-color: lightcoral;">Box 2</div>
+    <div class="title">
+        <h1>我們的旅行</h1>
+    </div>
+    <div class="container">
+        <div class="daily">
+            <h2>行程安排</h2>
+            <ul>
+                <li><a href="#D1">Day 1</a></li>
+                <li><a href="#D2">Day 2</a></li>
+                <li><a href="#D3">Day 3</a></li>
+                <li><a href="#D4">Day 4</a></li>
+                <li><a href="#D5">Day 5</a></li>
+            </ul>
         </div>
-    </main>
-    <footer>Footer</footer>
+        <div class="content">
+            <div id="D1" class="D1">
+                <h1>Day 1</h1>
+            </div>
+            <div class="content1">
+                <h2><b>機票資訊：</b></h2>
+                <div class="content11">
+                    <h3><b>去程：台中 → 富國島</b></h3>
+                    <h3><b>時間：12:30 ~ 15:25</b></h3>
+                    <h3><b>飛行時間 約3小時55分</b></h3>
+                    <p>※視當天情況，飛機可能會delay</p>
+                </div>
+            </div>
+            <div class="content2">
+                <h2><b>下飛機後流程：</b></h2>
+                <ol>
+                    <li><b>入境檢查</b>
+                        <ul>
+                            <li>持台灣護照，不用事先申辦簽證</li>
+                            <li>向移民官出示以下證件：
+                                <ul>
+                                    <li>有效護照(有效期需超過6個月)</li>
+                                    <li>回程機票 或 離境機票</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <p>※等待時間 約40分~1小時</p>
+                    <li><b>拿行李</b></li>
+                    <li><b>過海關</b></li>
+                </ol></b>
+                <p>這樣就抵達富國島啦！！！</p>
+            </div>
+
+            <div id="D2" class="D2">
+                <h1>Day 2</h1>
+            </div>
+
+            <div id="D3" class="D3">
+                <h1>Day 3</h1>
+            </div>
+
+            <div id="D4" class="D4">
+                <h1>Day 4</h1>
+            </div>
+            
+            <div id="D5" class="D5">
+                <h1>Day 5</h1>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

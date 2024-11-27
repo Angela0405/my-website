@@ -1,0 +1,138 @@
+body{
+    background-color: #d5dce1;
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    background-color: #335676;
+    color: white;
+    height: 13em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 50px;
+    position: relative;
+    top: -20px;
+}
+
+.container{
+    background-color: #f3f9fb;
+    margin: -40px 120px; /* 上下左右都有間隔 */
+    padding: 20px; /* 設置內邊距 */
+}
+
+.daily{
+    border: 2px dashed black;
+    margin-top: 30px;
+    margin-right: 50em;
+}
+
+.daily h2{
+    margin-left: 20px;
+}
+.daily ul{
+    margin-left: 20px;
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+}
+.daily ul li {
+    margin-bottom: 5px;
+}
+
+.D1, .D2, .D3, .D4, .D5{
+    background-color: #E897BF;
+    padding-bottom: 1px;
+    border-radius: 10px; /* 圓角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
+    position: relative;
+    
+}
+.D1 h1, .D2 h1, .D3 h1, .D4 h1, .D5 h1{
+    font-size: 50px;
+    margin: 30px;
+    position: relative; 
+    top: 15px;
+}
+
+.content1, .content2{
+    background-color: #f3f9fb;
+    /*border: 2px dashed black;*/
+    margin: 0px 30px;
+}
+.content11{
+    background-color: #cdb4db;
+    padding: 1px 0px;
+    margin: 10px 30px;
+    border-radius: 5px;
+    position: relative; 
+}
+.content11 h3, .content11 p{
+    position: relative; 
+    left: 15px;
+}
+
+/* 響應式設計: 當螢幕寬度小於 768px 時 */
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        margin: -40px 20px;
+        padding: 15px;
+    }
+
+    .daily {
+        margin-right: 0;
+    }
+
+    .daily ul {
+        font-size: 16px;
+    }
+
+    .D1 h1, .D2 h1, .D3 h1, .D4 h1, .D5 h1 {
+        font-size: 30px;
+    }
+
+    .content1, .content2 {
+        margin: 0 10px;
+    }
+
+    .content11 {
+        margin: 10px;
+        padding: 5px;
+    }
+}
+
+/* 響應式設計: 當螢幕寬度小於 480px 時 */
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        margin: -40px 10px;
+        padding: 10px;
+    }
+
+    .daily ul {
+        font-size: 14px;
+    }
+
+    .D1 h1, .D2 h1, .D3 h1, .D4 h1, .D5 h1 {
+        font-size: 24px;
+    }
+
+    .content11 {
+        margin: 5px;
+        padding: 5px;
+    }
+}
