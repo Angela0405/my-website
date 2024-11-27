@@ -90,6 +90,10 @@ body{
         padding: 15px;
     }
 
+    .daily {
+        margin-right: 0;
+    }
+
     .daily ul {
         font-size: 16px;
     }
